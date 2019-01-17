@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lib Demo</string>
+
+    <string name="unsplash_api_key">API KEY HERE</string>
+</resources>

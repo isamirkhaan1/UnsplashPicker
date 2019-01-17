@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/img_thumb"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/img_loading" />
+
+    <TextView
+        android:id="@+id/tv_photographer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_thumb"
+        android:gravity="center"
+        android:text="Name"
+        android:textSize="10sp"
+        android:typeface="serif" />
+
+</RelativeLayout>
