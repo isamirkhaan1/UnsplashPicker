@@ -7,7 +7,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.samirk433.unsplashpicker.OnPhotoSelection;
-import com.samirk433.unsplashpicker.SplashPicker;
+import com.samirk433.unsplashpicker.UnsplashPicker;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                SplashPicker.show(MainActivity.this, new OnPhotoSelection() {
+                UnsplashPicker.show(MainActivity.this, new OnPhotoSelection() {
                     @Override
                     public void onPhotoSelect(String url) {
 
