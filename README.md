@@ -16,7 +16,7 @@ Following 1 & only 1 permission is needed for this library. I cannot explain _ex
     <uses-permission android:name="android.permission.INTERNET" />
 
 ## Usage
-### Add Unsplash Secret Key
+### Add Unsplash Access Key
 * Go to [Unsplash Developers](https://unsplash.com/developers)
 * Register as a developer and create an app
 * Copy the **secret key** to string resources file `strings.xml` as follow
@@ -45,5 +45,5 @@ Display UnsplashPicker dialog and register a callback on image selection
 Contributions are welcome. This is my 1st OS library and I want to encourage other novices to start contributing. Therefore I have left some features/bugs that you may be interested to work on. 
 * Replace `Gridview` with `Recyclerview (GridLayout)`
 * Add endless scrolling
-* [BUG] [okhttp](https://square.github.io/okhttp/) doesn't work with [Unsplash](www.unsplash.com) Server on  Android API 19
+* [BUG] [okhttp](https://square.github.io/okhttp/) doesn't work with [Unsplash](https://www.unsplash.com) Server on  Android API 19
 * And most importantly, improve README
