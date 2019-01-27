@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonSyntaxException;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -34,8 +35,8 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 
-public class SplashPicker extends DialogFragment implements View.OnClickListener {
-    private static final String TAG = SplashPicker.class.getSimpleName();
+public class UnsplashPicker extends DialogFragment implements View.OnClickListener {
+    private static final String TAG = UnsplashPicker.class.getSimpleName();
 
     /*
      * View instances
@@ -68,7 +69,7 @@ public class SplashPicker extends DialogFragment implements View.OnClickListener
         sOnPhotoSelection = onPhotoSelection;
 
         //show dialog
-        SplashPicker dialog = new SplashPicker();
+        UnsplashPicker dialog = new UnsplashPicker();
         dialog.show(((FragmentActivity) context).getSupportFragmentManager(), TAG);
     }
 
@@ -143,7 +144,6 @@ public class SplashPicker extends DialogFragment implements View.OnClickListener
                     getContext().getPackageName(), PackageManager.GET_META_DATA);
 
 
-
             //read meta-data from app manifest
             Bundle bundle = applicationInfo.metaData;
 
@@ -160,6 +160,7 @@ public class SplashPicker extends DialogFragment implements View.OnClickListener
 
         } catch (PackageManager.NameNotFoundException e) {
             Log.e(TAG, e.toString());
+            e.printStackTrace();
         } catch (IllegalAccessException e) {
             Log.e(TAG, e.toString());
             e.printStackTrace();
@@ -198,7 +199,7 @@ public class SplashPicker extends DialogFragment implements View.OnClickListener
     }
 
     private void showToast(final String msg) {
-        Log.d(TAG, String.format("showThreadOnUiThread(%SplashPicker)", msg));
+        Log.d(TAG, String.format("showThreadOnUiThread(%UnsplashPicker)", msg));
 
 
         if (getActivity() != null) {
@@ -253,7 +254,7 @@ public class SplashPicker extends DialogFragment implements View.OnClickListener
 
                             //update UI
                             updateUi();
-                        } catch (IllegalStateException e) {
+                        } catch (JsonSyntaxException e) {
                             Log.e(TAG, Constants.getExceptionMsg());
                         }
 
