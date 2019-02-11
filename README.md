@@ -42,8 +42,7 @@ Display UnsplashPicker dialog and register a callback on image selection
 ```
 
 ## Contributions
-Contributions are welcome. This is my 1st OS library and I want to encourage other novices to start contributing. Therefore I have left some features/bugs that you may be interested to work on. 
-* Replace `Gridview` with `Recyclerview (GridLayout)`
-* Add endless scrolling
-* [BUG] [okhttp](https://square.github.io/okhttp/) doesn't work with [Unsplash](https://www.unsplash.com) Server on  Android API 19
-* And most importantly, improve README
+Contributions are welcome. This is my 1st Open Source library and I want to encourage others to start contributing. Therefore I have left some [features/bugs][1] that you may be interested to work on. 
+
+[1] https://github.com/samirk433/UnsplashPicker/issues
+
