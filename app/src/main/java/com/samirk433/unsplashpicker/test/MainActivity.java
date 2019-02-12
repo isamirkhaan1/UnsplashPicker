@@ -1,13 +1,14 @@
 package com.samirk433.unsplashpicker.test;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.samirk433.unsplashpicker.OnPhotoSelection;
 import com.samirk433.unsplashpicker.UnsplashPicker;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 
 public class MainActivity extends AppCompatActivity {

@@ -1,8 +1,8 @@
-package samirk433.com.images;
+package com.samirk433.unsplashpicker.test;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Example local unit test, which will execute on the development machine (host).
